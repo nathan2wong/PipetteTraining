@@ -12,7 +12,7 @@ MODEL_FOLDER = os.path.join(os.getcwd(), 'model')
 ALLOWED_EXTENSIONS = set(['xlsx'])
 
 app = Flask(__name__)
-app.secret_key = os.urandom(65336)
+app.secret_key = os.urandom(32)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MODEL_FOLDER'] = MODEL_FOLDER
 
@@ -66,13 +66,14 @@ def analysis():
     #LinReg = sampleParse(name, save_folder)
     #lineplot = url_for('uploaded_file', filename="lineplot.png", date=date)
 
-    LinReg, results = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
+    LinReg, results, metadata = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
     lineplots = []
     for key in LinReg.keys():
         img_name = key.split("_")[0] + "_" + "lineplot.png"
         lineplots.append([url_for('uploaded_file', filename=img_name, date=date), key, LinReg[key]])
     return render_template("upload.html", reg=lineplots, date=date.split(".")[0],
-                           ml_results = [list(results["probabilities"])[0], list(results["class_id"])[0]])
+                           ml_results = [list(results["probabilities"])[0], list(results["class_id"])[0]],
+                           metadata=metadata)
 
 @app.route("/<path:path>")
 def images(path):

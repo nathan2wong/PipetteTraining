@@ -110,6 +110,10 @@
             </p>
           </div>
           {% endfor %}
+          <h2>Metadata</h2>
+          {% for key, val in metadata.items() %}
+          <li>{{ key }} {{ val }}</li>
+          {% endfor %}
         </div>
         <div class="card-footer small text-muted">Updated {{ date }}</div>
         {% endif %}

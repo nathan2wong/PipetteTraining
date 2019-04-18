@@ -34,13 +34,14 @@ def sampleParse(excelname, save_loc):
 
 class Model:
     def __init__(self, model_dir):
-        self.model = self.build_model(model_dir)
+        #self.model = self.build_model(model_dir)
+        self.model = self.build_model_regu(model_dir)
 
     #Build Model
     def build_model(self, model_dir):
         continuous_features = [tf.feature_column.numeric_column(str(k)) for k in FEATURES]
         model = tf.estimator.LinearClassifier(
-            n_classes = 2,
+            n_classes = 3,
             model_dir=model_dir,
             feature_columns= continuous_features)
         return model
@@ -48,7 +49,7 @@ class Model:
     def build_model_regu(self, model_dir):
         continuous_features = [tf.feature_column.numeric_column(str(k)) for k in FEATURES]
         model = tf.estimator.LinearClassifier(
-            n_classes = 2,
+            n_classes = 3,
             model_dir=model_dir,
             feature_columns= continuous_features,
             optimizer=tf.train.FtrlOptimizer(
@@ -80,7 +81,7 @@ class Model:
         classifier = []
 
         for i in pred_iter:
-            probabilities.append(i['probabilities'])
+            probabilities.append(i['logits'])
             classifier.append(i['class_ids'])
         outputDF['probabilities'] = probabilities
         outputDF['class_id'] = classifier
@@ -154,11 +155,12 @@ class PipetteTutorial:
                 data[index] = df_row
                 index = chr(ord(index) + 1)
         return pd.DataFrame(data)
-    def dilutionLine(self, row, save_loc):
+    def dilutionLine(self, row, save_loc, df):
         Output = []
-        plt.plot(self.data[row])
+        print(df)
+        plt.plot(df[row])
         plt.title(row)
-        Output.append(str(row) + ": " +  str(linregress(self.data[row], self.data.index)))
+        Output.append(str(row) + ": " +  str(linregress(df[row], df.index)))
         plt.savefig(os.path.join(save_loc, row+"_lineplot.png"))
         plt.close()
         return Output
@@ -169,16 +171,19 @@ def runAnalysis(excelname, save_loc, model_directory):
     last = ord(trial.metadata["Part of the plate:"].split(" - ")[1][:1])
     documentation = {}
     index = 0
-    print(chr(first), chr(last))
 
+    '''
     while first <= last:
         plate = chr(first)
         if index < len(FEATURES):
-            documentation[str(plate + "_" + FEATURES[index])] = trial.dilutionLine(plate, save_loc)
+            documentation[str(plate + "_" + FEATURES[index])] = trial.dilutionLine(plate, save_loc, trial.data)
         first += 1
         index += 1
+    '''
 
     model = Model(os.path.join(model_directory))
+
+
 
     def performTest(df):
         test_data = {}
@@ -188,5 +193,6 @@ def runAnalysis(excelname, save_loc, model_directory):
             index += 1
         return test_data
 
+    documentation["user data"] = trial.dilutionLine("user data", save_loc, pd.DataFrame({"user data": trial.data["A"].iloc[:6]}))
     results = model.makePrediction(pd.DataFrame(performTest(trial.data)))
-    return documentation, results
+    return documentation, results, trial.metadata
