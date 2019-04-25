@@ -98,12 +98,13 @@
         {% if reg %}
         <div class="card-body" style="text-align:center">
           <h1>Analysis</h1>
-          <h2>Probabilities: {{ ml_results[0] }} <hr> Category (1 is accurate): {{ ml_results[1][0] }}</h2>
+          <p>{{ ml_results }} </p>
           {% for reg_list in reg %}
           <img src="{{ reg_list[0] }}" class="mini" alt="" />
           <div>
             <p>
               Analytics
+              <hr>
               {{ reg_list[1] }}
               {{ reg_list[2] }}
             <hr>

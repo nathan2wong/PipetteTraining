@@ -3,7 +3,6 @@ from werkzeug.utils import secure_filename
 import os
 import datetime
 import analysis
-from analysis import sampleParse
 from analysis import runAnalysis
 import urllib
 
@@ -67,13 +66,14 @@ def analysis():
     #lineplot = url_for('uploaded_file', filename="lineplot.png", date=date)
 
     LinReg, results, metadata = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
+    print(LinReg, results, metadata)
     lineplots = []
     for key in LinReg.keys():
         img_name = key.split("_")[0] + "_" + "lineplot.png"
         lineplots.append([url_for('uploaded_file', filename=img_name, date=date), key, LinReg[key]])
     return render_template("upload.html", reg=lineplots, date=date.split(".")[0],
-                           ml_results = [list(results["probabilities"])[0], list(results["class_id"])[0]],
-                           metadata=metadata)
+                           ml_results = [results],
+                           metadata=metadata[0])
 
 @app.route("/<path:path>")
 def images(path):
