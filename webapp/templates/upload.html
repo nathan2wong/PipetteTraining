@@ -98,7 +98,7 @@
         <div class="card-header" style="cursor:pointer" onclick="toggleDisplay({{ count[0] }})">
           <i class="fas fa-address-card"></i>
           Student {{ key }} Results | Click to Expand or Hide</div>
-        <div class="card-body" style="text-align:center" id="{{ count[0] }}">
+        <div class="analysis card-body" style="text-align:center" id="{{ count[0] }}">
           <div class="row">
           {% for exp in val %}
           <div class="col-md-6">
@@ -179,11 +179,11 @@
 
 <script>
   function hideresults() {
-    var cards = document.getElementsByClassName("card-body");
+    var cards = document.getElementsByClassName("analysis");
     var exempt = document.getElementById("exempt");
     console.log(cards);
     console.log(exempt);
-    for (var i = 0, max = cards.length; i < max; i++){
+    for (var i = 1, max = cards.length; i < max; i++){
       if (cards[i] !== exempt) {
         cards[i].style.display = "none";
       }
