@@ -19,7 +19,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="hideresults()">
 
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -62,7 +62,7 @@
 
       </ol>
 
-      {% if not reg %}
+      {% if not results %}
       <div class="card mb-3">
         <div class="card-header">
           <i class="fas fa-chart-area"></i>
@@ -91,34 +91,42 @@
 
 
       <!-- DataTables Example -->
+      {% if results %}
+      {% set count = [0] %}
+      {% for key, val in results.items() %}
+      <div class="card mb-3">
+        <div class="card-header" style="cursor:pointer" onclick="toggleDisplay({{ count[0] }})">
+          <i class="fas fa-address-card"></i>
+          Student {{ key }} Results | Click to Expand or Hide</div>
+        <div class="card-body" style="text-align:center" id="{{ count[0] }}">
+          <div class="row">
+          {% for exp in val %}
+          <div class="col-md-6">
+              <img src="{{ exp[2] }}" class="mini" alt="" />
+              <p>{{ exp[0] }} Result: {{ exp[1] }}</p>
+              <p style="font-size:10px">Additional Information: {{ exp[3] }}</p>
+          </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+      {% if count.append(count.pop() + 1) %}{% endif %} {# increment count by 1 #}
+      {% endfor %}
       <div class="card mb-3">
         <div class="card-header">
           <i class="fas fa-table"></i>
-          Performance Review and Analysis from Tecan Upload</div>
-        {% if reg %}
-        <div class="card-body" style="text-align:center">
-          <h1>Analysis</h1>
-          <p>{{ ml_results }} </p>
-          {% for reg_list in reg %}
-          <img src="{{ reg_list[0] }}" class="mini" alt="" />
-          <div>
-            <p>
-              Analytics
-              <hr>
-              {{ reg_list[1] }}
-              {{ reg_list[2] }}
-            <hr>
-            </p>
-          </div>
-          {% endfor %}
-          <h2>Metadata</h2>
+          Metadata</div>
+        <div class="card-body" id="exempt" style="text-align:center">
           {% for key, val in metadata.items() %}
           <li>{{ key }} {{ val }}</li>
-          {% endfor %}
+        {% endfor %}
         </div>
         <div class="card-footer small text-muted">Updated {{ date }}</div>
-        {% endif %}
       </div>
+      {% endif %}
+
+
 
     </div>
     <!-- /.container-fluid -->
@@ -168,6 +176,31 @@
 
 <!-- Custom scripts for all pages-->
 <script src="{{ url_for('static',filename='js/sb-admin.min.js') }}"></script>
+
+<script>
+  function hideresults() {
+    var cards = document.getElementsByClassName("card-body");
+    var exempt = document.getElementById("exempt");
+    console.log(cards);
+    console.log(exempt);
+    for (var i = 0, max = cards.length; i < max; i++){
+      if (cards[i] !== exempt) {
+        cards[i].style.display = "none";
+      }
+    }
+  }
+  function toggleDisplay(x) {
+    console.log(x);
+    var card = document.getElementById(x);
+    console.log(card);
+    if (card.style.display === "none") {
+      card.style.display = "block";
+    }
+    else {
+      card.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 

@@ -2,75 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1c548f-8d32-4855-97c6-f5d7d454355c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oldanalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accuracy Algorithms (and Parsing).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Accuracy Algorithms (and Parsing).ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fluorescein_dilution.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../fluorescein_dilution.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/../model2/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/../model2/graph.pbtxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-1152.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../model2/model.ckpt-1152.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-640.data-00000-of-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-640.data-00001-of-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-640.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-640.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-768.data-00000-of-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-768.data-00001-of-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-768.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model2/model.ckpt-768.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rhudimine_dilution.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../rhudimine_dilution.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/A_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/A_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/B_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/B_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/C_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/C_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/D_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/D_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/E_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/E_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/F_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/F_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/G_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/G_lineplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vis/H_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../vis/H_lineplot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/A_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/B_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/C_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/D_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/E_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/F_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-09 18:57:11.102974/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/A_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/B_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/C_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/D_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/E_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/F_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:16:28.987530/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:36:17.109366/mod_trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:36:17.109366/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:03.846713/mod_trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:03.846713/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:15.861533/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:15.861533/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:55.484310/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 09:37:55.484310/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:11:28.195402/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:11:28.195402/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:11:43.475972/mod_trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:11:43.475972/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:12:33.222623/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:12:33.222623/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:05.360808/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:05.360808/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:22.863345/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:22.863345/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:32.673708/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:32.673708/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:48.677903/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:16:48.677903/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:12.195907/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:12.195907/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:25.455839/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:25.455839/user data_lineplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:37.141839/trial_2_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2019-04-10 10:17:37.141839/user data_lineplot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pipetteupload.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipetteupload.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
@@ -86,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="-329">
+              <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -98,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipetteupload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+            <state relative-caret-position="172">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding>
                 <element signature="e#0#120#0" expanded="true" />
               </folding>
@@ -107,13 +41,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oldanalysis.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="196" column="10" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="10" />
+            <state relative-caret-position="304">
+              <caret line="97" column="95" selection-start-line="97" selection-start-column="95" selection-end-line="97" selection-end-column="95" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,20 +61,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="120" column="44" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
+            <state relative-caret-position="15">
+              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/upload.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oldanalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+            <state relative-caret-position="179">
+              <caret line="178" column="33" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,24 +139,16 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>26 new</find>
-      <find>home</find>
-      <find>your web</find>
-      <find>index.html</find>
       <find>data table</find>
-      <find>analysis</find>
       <find>r</find>
       <find>datatabl</find>
       <find>url_</find>
       <find>sb ad</find>
       <find>images</find>
       <find>Pipetting</find>
-      <find>show</find>
       <find>samplepa</find>
       <find>generateDF</find>
-      <find>reg</find>
       <find>val</find>
-      <find>plt.</find>
       <find>samplep</find>
       <find>meta</find>
       <find>list(</find>
@@ -230,7 +160,15 @@
       <find>dilution</find>
       <find>docume</find>
       <find>&quot;_</find>
+      <find>analysis</find>
+      <find>show</find>
+      <find>for key, i</find>
+      <find>reg</find>
+      <find>perform</find>
+      <find>plt</find>
+      <find>print</find>
       <find>metadata</find>
+      <find>plt.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,8 +186,8 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/oldanalysis.py" />
-        <option value="$PROJECT_DIR$/analysis.py" />
         <option value="$PROJECT_DIR$/pipetteupload.py" />
+        <option value="$PROJECT_DIR$/analysis.py" />
         <option value="$PROJECT_DIR$/templates/upload.html" />
       </list>
     </option>
@@ -265,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,12 +224,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556179778201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556180259646" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -427,7 +365,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -526,15 +464,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="120" column="44" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
+        <state relative-caret-position="15">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipetteupload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#120#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oldanalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="196" column="10" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="10" />
+        <state relative-caret-position="179">
+          <caret line="178" column="33" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -543,31 +491,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="-329">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipetteupload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        <state relative-caret-position="304">
+          <caret line="97" column="95" selection-start-line="97" selection-start-column="95" selection-end-line="97" selection-end-column="95" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

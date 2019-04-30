@@ -66,13 +66,23 @@ def analysis():
     #lineplot = url_for('uploaded_file', filename="lineplot.png", date=date)
 
     LinReg, results, metadata = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
-    print(LinReg, results, metadata)
     lineplots = []
     for key in LinReg.keys():
         img_name = key.split("_")[0] + "_" + "lineplot.png"
         lineplots.append([url_for('uploaded_file', filename=img_name, date=date), key, LinReg[key]])
-    return render_template("upload.html", reg=lineplots, date=date.split(".")[0],
-                           ml_results = [results],
+
+    display_dict = {}
+    for key in results.keys():
+        student = key.split(" ")[0]
+        img_name = key + "_" + "lineplot.png"
+        img_url = url_for('uploaded_file', filename=img_name, date=date)
+        if student not in display_dict.keys():
+            display_dict[student] = [[key, results[key], img_url, LinReg[key]]]
+        else:
+            display_dict[student].append([key, results[key], img_url, LinReg[key]])
+    print(display_dict)
+    return render_template("upload.html", date=date.split(".")[0],
+                           results = display_dict,
                            metadata=metadata[0])
 
 @app.route("/<path:path>")
@@ -86,52 +96,3 @@ def uploaded_file():
     date = request.args.get('date')
     filename = request.args.get('filename')
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER'], date), filename)
-
-from random import random
-
-from bokeh.layouts import row
-from bokeh.models import CustomJS, ColumnDataSource
-from bokeh.plotting import figure, output_file, show
-@app.route("/bokeh")
-def bokeh():
-    output_file("callback.html")
-    x = [random() for x in range(500)]
-    y = [random() for y in range(500)]
-    x2 = [random() for x2 in range(100)]
-    y2 = [random() for y2 in range(100)]
-
-    # the two different data sources of different length
-    s1 = ColumnDataSource(data=dict(x=x, y=y))
-    s1b = ColumnDataSource(data=dict(x2=x2, y2=y2))
-
-    # the figure with all source data where we make selections
-    p1 = figure(plot_width=400, plot_height=400, tools="lasso_select", title="Select Here")
-    p1.circle('x', 'y', source=s1, alpha=0.6, color='red')
-    p1.circle('x2', 'y2', source=s1b, alpha=0.6, color='black')
-
-    # second figure which is empty initially where we show the selected datapoints
-    s2 = ColumnDataSource(data=dict(x=[], y=[]))
-    s2b = ColumnDataSource(data=dict(x2=[], y2=[]))
-    p2 = figure(plot_width=400, plot_height=400, x_range=(0, 1), y_range=(0, 1),
-                tools="", title="Watch Here")
-    p2.circle('x', 'y', source=s2, alpha=0.6, color='red')
-    p2.circle('x2', 'y2', source=s2b, alpha=0.6, color='black')
-
-    def attach_selection_callback(main_ds, selection_ds):
-        def cb(attr, old, new):
-            new_data = {c: [] for c in main_ds.data}
-            for idx in new['1d']['indices']:
-                for column, values in main_ds.data.items():
-                    new_data[column].append(values[idx])
-            # Setting at the very end to make sure that we don't trigger multiple events
-            selection_ds.data = new_data
-
-        main_ds.on_change('selected', cb)
-    attach_selection_callback(s1, s2)
-    attach_selection_callback(s1b, s2b)
-
-    layout = row(p1, p2)
-
-    show(layout)
-
-

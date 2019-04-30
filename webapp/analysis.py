@@ -54,12 +54,12 @@ class PipetteTutorial:
         return all_data
     def dilutionLine(self, row, label, save_loc):
         Output = []
+        plt.figure(figsize=(5,5))
         plt.plot(self.data[label][row])
         plt.title(row + " " + LABELS[label])
         Output.append(LABELS[label] + " " + str(row) + ": " +  str(linregress(self.data[label][row], self.data[label].index)))
         Output.append("Logistic Regression (mean, variance)" + ": " + str(logistic.fit(list(self.data[label][row]))))
         plt.savefig(os.path.join(save_loc, row + " " + LABELS[label]+"_lineplot.png"))
-        plt.show()
         plt.close()
         return Output
     def filterData(self, df_arr):
