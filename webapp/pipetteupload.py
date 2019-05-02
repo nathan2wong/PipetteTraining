@@ -8,7 +8,7 @@ import urllib
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
 MODEL_FOLDER = os.path.join(os.getcwd(), 'model')
-ALLOWED_EXTENSIONS = set(['xlsx'])
+ALLOWED_EXTENSIONS = set(['xlsx', 'xls'])
 
 app = Flask(__name__)
 app.secret_key = os.urandom(32)

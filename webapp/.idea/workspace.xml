@@ -3,7 +3,104 @@
   <component name="ChangeListManager">
     <list default="true" id="1b1c548f-8d32-4855-97c6-f5d7d454355c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:00:57.622210/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:13:18.047585/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 01:19:29.799718/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-25 12:04:46.307131/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:16:13.044018/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/A Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/A Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/A Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/A Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/B Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/B Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/B Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/B Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/C Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/C Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/C Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/C Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/D Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/D Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/D Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/D Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/E Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/E Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/E Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/E Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/F Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/F Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/F Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/F Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/G Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/G Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/G Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/G Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/H Fluorescein_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/H Fluorescein_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/H Rhodamine_lineplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019-04-29 20:19:04.735580/H Rhodamine_lineplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipetteupload.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipetteupload.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +111,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-329">
-              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+            <state relative-caret-position="345">
+              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -29,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipetteupload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding>
                 <element signature="e#0#120#0" expanded="true" />
               </folding>
@@ -38,17 +135,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="2775">
               <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -58,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+            <state relative-caret-position="1395">
+              <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -67,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oldanalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="2640">
               <caret line="178" column="33" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -136,9 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data table</find>
-      <find>r</find>
-      <find>datatabl</find>
       <find>url_</find>
       <find>sb ad</find>
       <find>images</find>
@@ -163,9 +256,12 @@
       <find>reg</find>
       <find>perform</find>
       <find>plt</find>
-      <find>print</find>
-      <find>metadata</find>
       <find>plt.</find>
+      <find>exempt</find>
+      <find>float</find>
+      <find>parsedata</find>
+      <find>metadata</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,12 +276,12 @@
         <option value="$PROJECT_DIR$/theme.yaml" />
         <option value="$PROJECT_DIR$/flaskbokeh.py" />
         <option value="$PROJECT_DIR$/templates/analysis.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/oldanalysis.py" />
+        <option value="$PROJECT_DIR$/templates/upload.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/pipetteupload.py" />
         <option value="$PROJECT_DIR$/analysis.py" />
-        <option value="$PROJECT_DIR$/templates/upload.html" />
       </list>
     </option>
   </component>
@@ -200,6 +296,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,13 +319,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556180259646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556818493302" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -362,7 +458,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,6 +517,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2775">
+          <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldanalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="178" column="33" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/charts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -459,54 +586,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipetteupload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
             <element signature="e#0#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oldanalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="178" column="33" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        <state relative-caret-position="345">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

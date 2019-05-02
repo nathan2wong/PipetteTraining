@@ -31,7 +31,8 @@ class PipetteTutorial:
             metadata = {}
             def parse(name):
                 df2 = df.loc[df[df.columns[0]]==name].dropna(axis=1)
-                return df2[df2.columns[1]].iloc[0]
+                metadata_val = df2[df2.columns[1]].iloc[0]
+                return metadata_val
             for item in METADATA:
                 metadata[item] = parse(item)
             all_metadata.append(metadata)
@@ -76,15 +77,17 @@ class PipetteTutorial:
             if index == 0:
                 df = df.drop(np.arange(6, 12))
                 self.norms.append(findNorms(df))
-                df.loc[0] = self.norms[0]
+                print(pd.Series(self.norms[0]))
+                df.loc[0] = pd.Series(self.norms[0])
                 df = df[:-1]
             #Label 2, Rhodamine
             elif index == 1:
                 df = df.drop(np.arange(0,6))
                 df = df.reset_index(drop=True)
                 self.norms.append(findNorms(df))
-                df.loc[0] = self.norms[1]
+                df.loc[0] = pd.Series(self.norms[1])
                 df = df[:-1]
+            print(df)
             output_arr.append(df.astype('float64'))
         return output_arr
 
