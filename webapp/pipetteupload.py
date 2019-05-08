@@ -28,7 +28,7 @@ def home():
         if folder == ".DS_Store":
             continue
         for file in os.listdir(os.path.join(app.config['UPLOAD_FOLDER'], folder)):
-            if file.endswith(".xlsx"):
+            if file.endswith(".xlsx") or file.endswith(".xls"):
                 datafile = file
                 break
         if datafile is not "":
