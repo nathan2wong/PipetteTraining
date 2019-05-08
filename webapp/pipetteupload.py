@@ -65,7 +65,7 @@ def analysis():
     #LinReg = sampleParse(name, save_folder)
     #lineplot = url_for('uploaded_file', filename="lineplot.png", date=date)
 
-    LinReg, results, metadata = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
+    LinReg, results, metadata, additional = runAnalysis(name, save_folder, app.config['MODEL_FOLDER'])
     lineplots = []
     for key in LinReg.keys():
         img_name = key.split("_")[0] + "_" + "lineplot.png"
@@ -80,9 +80,11 @@ def analysis():
             display_dict[student] = [[key, results[key], img_url, LinReg[key]]]
         else:
             display_dict[student].append([key, results[key], img_url, LinReg[key]])
+
+    additional = [[exp[0].values.tolist(), url_for('uploaded_file', filename=exp[1], date=date)] for exp in additional]
     return render_template("upload.html", date=date.split(".")[0],
                            results = display_dict,
-                           metadata=metadata[0])
+                           metadata=metadata[0], additional=additional)
 
 @app.route("/<path:path>")
 def images(path):

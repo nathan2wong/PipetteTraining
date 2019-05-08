@@ -123,6 +123,49 @@ class NNModel:
         print(confusion_matrix(correctdf, predictions))
         print(classification_report(correctdf, predictions))
 
+#Other analysis
+def slope_intercept(x_val, y_val):
+    x=np.array(x_val)
+    y=np.array(y_val)
+    m=(((np.mean(x)*np.mean(y))) - np.mean(x*y)) / ((np.mean(x)*np.mean(x)) - np.mean(x*x))
+    m=round(m, 2)
+    b=(np.mean(y) - np.mean(x)*m)
+    b = round(b, 2)
+    return m, b
+
+def target(student):
+    return [student[0], student[0]/2, student[0]/4, student[0]/8, student[0]/16, student[0]]
+
+def plot_student(student, save_loc, filename):
+    x = [1, 1/2, 1/4, 1/8, 1/16, 1]
+    labels = ["1-norm", "2", "3", "4", "5", "6"]
+    diff = np.array(target(student)) * 0.21
+    m, b = slope_intercept(x, student)
+    reg_line=[(m*i)+b for i in x]
+    plt.figure(figsize=(5,5))
+    plt.scatter(x, student, color="r", s = 12)
+    plt.plot(x, target(student))
+    plt.plot(x, target(student) - diff, linewidth=.3)
+    plt.title("Pipetting Accuracy Detection")
+    plt.xlabel("Dilution")
+    plt.ylabel("Read")
+    plt.plot(x, target(student) + diff, linewidth=.3)
+    for i in range(len(student)):
+        plt.text(x[i] + 0.01, student[i], labels[i])
+    plt.savefig(os.path.join(save_loc, filename))
+    plt.clf()
+    return filename
+
+def scoring(student, row):
+    diff = np.array(target(student)) * 0.21
+    student_diff = abs(np.array(student) - np.array(target(student)))
+    passes = list(student_diff <= diff)
+    df = pd.DataFrame(passes).T
+    df.columns = [1, 2, 3, 4, 5, 6]
+    df = df.replace({True: 'Pass', False: 'Fail'})
+    df = df.rename(index={0: row})
+    return df
+
 def runAnalysis(excelname, save_loc, model_directory):
     exp = PipetteTutorial(excelname, save_loc)
     documentation = {}
@@ -140,6 +183,7 @@ def runAnalysis(excelname, save_loc, model_directory):
     prediction = {1: "Pipetting was done correctly.",
                   0: "Incorrect: Pipetting under the correct amount (not enough liquid).",
                   2: "Incorrect: Pipetting over the correct  amount (too much liquid)."}
+    additional = []
     for label in range(len(exp.data)):
         index = 'A'
         for _ in exp.data[label]:
@@ -148,6 +192,10 @@ def runAnalysis(excelname, save_loc, model_directory):
                 results[index + " " + LABELS[label]] = prediction[fluorescein.predict(exp.data[label][[index]].T)[0]]
             elif label == 1:
                 results[index + " " + LABELS[label]] = prediction[rhodamine.predict(exp.data[label][[index]].T)[0]]
+            student = list(exp.data[label][index])
+            student = student + [student[0]]
+            filename = str(index + " " + LABELS[label] + "additional.png")
+            additional.append([scoring(student, index), plot_student(student, save_loc, filename)])
             index = chr(ord(index) + 1)
 
-    return documentation, results, exp.metadata
+    return documentation, results, exp.metadata, additional

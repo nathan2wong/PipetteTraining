@@ -100,12 +100,27 @@
           Student {{ key }} Results | Click to Expand or Hide</div>
         <div class="analysis card-body" style="text-align:center" id="{{ count[0] }}">
           <div class="row">
-          {% for exp in val %}
+            {% for exp in val %}
           <div class="col-md-6  ">
               <img src="{{ exp[2] }}" class="mini" alt="" />
               <p>{{ exp[0] }} Result: {{ exp[1] }}</p>
               <p style="font-size:10px">Additional Information: {{ exp[3] }}</p>
           </div>
+            <div class="col-md-6  ">
+              <img src="{{ additional[count[0]][1] }}" class="mini" alt="" />
+              <p>Linear Regression Analysis (deviation from norm): </p>
+              <p style="font-size:10px">Additional Information: {{ count[0] }}
+                <br>
+                {% for val in additional[count[0]][0] %}
+                  {% set vindex = [0] %}
+                  {% for v in val %}
+                    {{ v }}
+                    {{ vindex[0] }}
+                  {% if vindex.append(vindex.pop() + 1) %}{% endif %} {# increment vindex by 1 #}
+                  {% endfor %}
+                {% endfor %}
+              </p>
+            </div>
             {% endfor %}
           </div>
 
