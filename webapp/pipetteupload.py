@@ -80,7 +80,6 @@ def analysis():
             display_dict[student] = [[key, results[key], img_url, LinReg[key]]]
         else:
             display_dict[student].append([key, results[key], img_url, LinReg[key]])
-    print(display_dict)
     return render_template("upload.html", date=date.split(".")[0],
                            results = display_dict,
                            metadata=metadata[0])

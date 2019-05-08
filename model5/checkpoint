@@ -1,6 +1,0 @@
-model_checkpoint_path: "model.ckpt-3840"
-all_model_checkpoint_paths: "model.ckpt-3328"
-all_model_checkpoint_paths: "model.ckpt-3456"
-all_model_checkpoint_paths: "model.ckpt-3584"
-all_model_checkpoint_paths: "model.ckpt-3712"
-all_model_checkpoint_paths: "model.ckpt-3840"

@@ -49,6 +49,8 @@ class PipetteTutorial:
             for row in df2.iterrows():
                 df_row = list(row[1][1:])
                 if "..." not in df_row:
+                    if df_row[0] < 100:
+                        continue
                     data[index] = df_row
                     index = chr(ord(index) + 1)
             all_data.append(pd.DataFrame(data))
@@ -74,20 +76,18 @@ class PipetteTutorial:
         for index in range(len(df_arr)):
             df = df_arr[index]
             #Label 1, Fluorescein
-            if index == 0:
+            if index == 0 and not df.empty:
                 df = df.drop(np.arange(6, 12))
                 self.norms.append(findNorms(df))
-                print(pd.Series(self.norms[0]))
                 df.loc[0] = pd.Series(self.norms[0])
                 df = df[:-1]
             #Label 2, Rhodamine
-            elif index == 1:
+            elif index == 1 and not df.empty:
                 df = df.drop(np.arange(0,6))
                 df = df.reset_index(drop=True)
                 self.norms.append(findNorms(df))
                 df.loc[0] = pd.Series(self.norms[1])
                 df = df[:-1]
-            print(df)
             output_arr.append(df.astype('float64'))
         return output_arr
 
@@ -140,9 +140,9 @@ def runAnalysis(excelname, save_loc, model_directory):
     prediction = {1: "Pipetting was done correctly.",
                   0: "Incorrect: Pipetting under the correct amount (not enough liquid).",
                   2: "Incorrect: Pipetting over the correct  amount (too much liquid)."}
-    for label in range(2):
+    for label in range(len(exp.data)):
         index = 'A'
-        for _ in range(8):
+        for _ in exp.data[label]:
             documentation[index + " " + LABELS[label]] = exp.dilutionLine(index, label, save_loc)
             if label == 0:
                 results[index + " " + LABELS[label]] = prediction[fluorescein.predict(exp.data[label][[index]].T)[0]]
